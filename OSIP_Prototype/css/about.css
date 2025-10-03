@@ -10,97 +10,84 @@
 
 .about-section h1 {
     text-align: center;
-    color: white;
-    font-size: 3.5rem;
+    color: #8B4513;
+    font-size: 2.5rem;
     margin-bottom: 2rem;
-    padding: 4rem 2rem;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    margin-left: -2rem;
-    margin-right: -2rem;
-    margin-top: -2rem;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    border-bottom: 3px solid #FFD700;
+    padding-bottom: 1rem;
 }
 
 .about-section h2 {
-    color: #667eea;
-    font-size: 2.5rem;
+    color: #8B4513;
+    font-size: 1.8rem;
     margin: 2.5rem 0 1.5rem 0;
-    text-align: center;
+    border-left: 4px solid #FFD700;
+    padding-left: 1rem;
 }
 
 .about-section h3 {
-    color: #667eea;
-    font-size: 1.5rem;
+    color: #CD853F;
+    font-size: 1.3rem;
     margin: 1.5rem 0 1rem 0;
 }
 
 /* Intro Content */
 .intro-content {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    color: white;
+    background: linear-gradient(135deg, #FFF8DC, #F5DEB3);
     padding: 2rem;
     border-radius: 10px;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
 
 .intro-content p {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     text-align: center;
     margin: 0;
-    opacity: 0.95;
 }
 
 /* Grid Layouts */
 .info-grid, .plans-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
+    gap: 1.5rem;
     margin: 2rem 0;
 }
 
 .info-card, .plan-card {
-    background: white;
-    padding: 2rem;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    background: #FFFACD;
+    padding: 1.5rem;
+    border-radius: 8px;
+    border: 2px solid #DEB887;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .info-card:hover, .plan-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
 }
 
 .info-card h3, .plan-card h3 {
-    color: #667eea;
+    color: #8B4513;
     margin-top: 0;
-    margin-bottom: 1rem;
-    font-size: 1.5rem;
-}
-
-.info-card p, .plan-card p {
-    color: #666;
+    border-bottom: 2px solid #FFD700;
+    padding-bottom: 0.5rem;
 }
 
 /* Product Information */
 .product-details {
-    background: #f8f9fa;
+    background: #F0F8FF;
     padding: 2rem;
     border-radius: 10px;
     margin: 1.5rem 0;
 }
 
 .ingredients-section {
-    background: white;
+    background: #E6FFE6;
     padding: 1.5rem;
-    border-radius: 10px;
+    border-radius: 8px;
     margin-bottom: 1.5rem;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-}
-
-.ingredients-section h3 {
-    margin-top: 0;
+    border-left: 5px solid #32CD32;
 }
 
 .ingredients-section ul {
@@ -110,8 +97,7 @@
 
 .ingredients-section li {
     padding: 0.5rem 0;
-    border-bottom: 1px solid #e0e0e0;
-    color: #666;
+    border-bottom: 1px dotted #90EE90;
 }
 
 .ingredients-section li:last-child {
@@ -119,138 +105,119 @@
 }
 
 .quality-features {
-    background: white;
+    background: #FFF0F5;
     padding: 1.5rem;
-    border-radius: 10px;
+    border-radius: 8px;
     margin-bottom: 1.5rem;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    border-left: 5px solid #FF69B4;
 }
 
-.quality-features h3 {
-    margin-top: 0;
+.shelf-life {
+    background: #F0FFFF;
+    padding: 1.5rem;
+    border-radius: 8px;
+    border-left: 5px solid #00CED1;
 }
 
-.quality-features p {
-    color: #666;
-}
-
-.product-details > h3 {
-    margin-top: 1.5rem;
-}
-
-.product-details > ul {
-    list-style: none;
-    padding: 0;
-}
-
-.product-details > ul li {
-    padding: 0.5rem 0;
-    color: #666;
-    border-bottom: 1px solid #e0e0e0;
-}
-
-.product-details > ul li:last-child {
-    border-bottom: none;
-}
-
-.product-details > p {
-    color: #666;
-}
-
-/* Process Details */
+/* Production Process */
 .process-details {
-    background: #f8f9fa;
+    background: #FFFAF0;
     padding: 2rem;
     border-radius: 10px;
     margin: 1.5rem 0;
 }
 
-.process-details h3 {
-    margin-top: 1.5rem;
+.process-details ul {
+    background: #FFF8DC;
+    padding: 1rem 1rem 1rem 2rem;
+    border-radius: 5px;
+    border-left: 3px solid #DAA520;
 }
 
-.process-details h3:first-child {
-    margin-top: 0;
+.process-details li {
+    margin: 0.5rem 0;
 }
 
-.process-details p {
-    color: #666;
-}
-
-/* Distribution Info */
+/* Distribution Section */
 .distribution-info {
-    background: #f8f9fa;
+    background: #F5FFFA;
     padding: 2rem;
     border-radius: 10px;
     margin: 1.5rem 0;
 }
 
 .distribution-info h3 {
-    margin-top: 1.5rem;
-}
-
-.distribution-info h3:first-child {
-    margin-top: 0;
-}
-
-.distribution-info p {
-    color: #666;
+    color: #2E8B57;
+    border-bottom: 2px solid #98FB98;
+    padding-bottom: 0.5rem;
 }
 
 /* Challenges Section */
 .challenges-list {
-    background: #f8f9fa;
+    background: #FFF5EE;
     padding: 2rem;
     border-radius: 10px;
     margin: 1.5rem 0;
 }
 
 .challenges-list h3 {
-    margin-top: 0;
-    color: #667eea;
+    color: #D2691E;
+    border-bottom: 2px solid #F4A460;
+    padding-bottom: 0.5rem;
 }
 
 .challenges-list ul {
-    list-style: none;
-    padding: 0;
+    background: #FFEBCD;
+    padding: 1rem 1rem 1rem 2rem;
+    border-radius: 5px;
+    border-left: 3px solid #CD853F;
+    margin: 1rem 0;
 }
 
 .challenges-list li {
     margin: 0.8rem 0;
-    padding: 0.5rem 0;
-    color: #666;
-    border-bottom: 1px solid #e0e0e0;
-}
-
-.challenges-list li:last-child {
-    border-bottom: none;
+    padding: 0.3rem 0;
 }
 
 .challenges-list strong {
-    color: #667eea;
+    color: #8B4513;
 }
 
 /* Sustainability Section */
 .sustainability {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    color: white;
+    background: linear-gradient(135deg, #E0FFE0, #F0FFF0);
     padding: 2rem;
     border-radius: 10px;
     margin: 2rem 0;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-}
-
-.sustainability h2 {
-    color: white;
-    text-align: center;
-    margin-bottom: 1rem;
+    border: 2px solid #90EE90;
 }
 
 .sustainability p {
     font-size: 1.1rem;
     text-align: center;
     margin: 0;
-    opacity: 0.95;
+}
+
+/* Customer Feedback */
+.customer-feedback {
+    background: linear-gradient(135deg, #FFE4E1, #FFF0F5);
+    padding: 2rem;
+    border-radius: 10px;
+    margin: 2rem 0;
+    border: 2px solid #FF69B4;
+}
+
+.customer-feedback h2 {
+    text-align: center;
+    color: #DC143C;
+    border: none;
+    margin-bottom: 1rem;
+}
+
+.customer-feedback p {
+    font-size: 1.1rem;
+    text-align: center;
+    margin: 0;
 }
 
 /* Responsive Design */
@@ -260,19 +227,11 @@
     }
     
     .about-section h1 {
-        font-size: 2.5rem;
-        padding: 3rem 1rem;
-        margin-left: -1rem;
-        margin-right: -1rem;
-        margin-top: -1rem;
-    }
-    
-    .about-section h2 {
         font-size: 2rem;
     }
     
-    .about-section h3 {
-        font-size: 1.3rem;
+    .about-section h2 {
+        font-size: 1.5rem;
     }
     
     .info-grid, .plans-grid {
@@ -281,12 +240,13 @@
     }
     
     .intro-content, .product-details, .process-details, 
-    .distribution-info, .challenges-list, .sustainability {
+    .distribution-info, .challenges-list, .sustainability, 
+    .customer-feedback {
         padding: 1.5rem;
     }
     
     .info-card, .plan-card {
-        padding: 1.5rem;
+        padding: 1rem;
     }
 }
 
@@ -297,26 +257,44 @@
     
     .about-section h1 {
         font-size: 1.8rem;
-        padding: 2rem 0.5rem;
-        margin-left: -0.5rem;
-        margin-right: -0.5rem;
-        margin-top: -0.5rem;
     }
     
     .about-section h2 {
-        font-size: 1.5rem;
-    }
-    
-    .about-section h3 {
-        font-size: 1.2rem;
+        font-size: 1.3rem;
+        margin: 2rem 0 1rem 0;
     }
     
     .intro-content, .product-details, .process-details, 
-    .distribution-info, .challenges-list, .sustainability {
+    .distribution-info, .challenges-list, .sustainability, 
+    .customer-feedback {
+        padding: 1rem;
+    }
+}
+
+/* Special Highlighting */
+.special-offer {
+    background: #FFE4B5;
+    padding: 1rem;
+    border-radius: 5px;
+    border-left: 4px solid #FF8C00;
+    margin: 1rem 0;
+}
+
+/* Print Styles */
+@media print {
+    .about-section {
+        max-width: none;
+        margin: 0;
         padding: 1rem;
     }
     
     .info-card, .plan-card {
-        padding: 1rem;
+        break-inside: avoid;
+        page-break-inside: avoid;
+    }
+    
+    .info-card:hover, .plan-card:hover {
+        transform: none;
+        box-shadow: none;
     }
 }
