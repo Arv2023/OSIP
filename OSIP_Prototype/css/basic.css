@@ -108,6 +108,11 @@ nav ul li a:hover {
     box-shadow: 0 4px 15px rgba(255, 215, 0, 0.4);
 }
 
+.cta-button a {
+    color: #333;
+    text-decoration: none;
+}
+
 .cta-button:hover {
     transform: translateY(-2px);
     box-shadow: 0 6px 20px rgba(255, 215, 0, 0.6);
@@ -125,8 +130,17 @@ nav ul li a:hover {
     transition: all 0.3s;
 }
 
+.cta-button-secondary a {
+    color: #667eea;
+    text-decoration: none;
+}
+
 .cta-button-secondary:hover {
     background-color: #667eea;
+    color: white;
+}
+
+.cta-button-secondary:hover a {
     color: white;
 }
 

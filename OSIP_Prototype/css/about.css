@@ -1,0 +1,322 @@
+/* About Page Specific Styles */
+
+.about-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    line-height: 1.6;
+    color: #333;
+}
+
+.about-section h1 {
+    text-align: center;
+    color: white;
+    font-size: 3.5rem;
+    margin-bottom: 2rem;
+    padding: 4rem 2rem;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    margin-left: -2rem;
+    margin-right: -2rem;
+    margin-top: -2rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.about-section h2 {
+    color: #667eea;
+    font-size: 2.5rem;
+    margin: 2.5rem 0 1.5rem 0;
+    text-align: center;
+}
+
+.about-section h3 {
+    color: #667eea;
+    font-size: 1.5rem;
+    margin: 1.5rem 0 1rem 0;
+}
+
+/* Intro Content */
+.intro-content {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    margin-bottom: 3rem;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.intro-content p {
+    font-size: 1.2rem;
+    text-align: center;
+    margin: 0;
+    opacity: 0.95;
+}
+
+/* Grid Layouts */
+.info-grid, .plans-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.info-card, .plan-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.info-card:hover, .plan-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+}
+
+.info-card h3, .plan-card h3 {
+    color: #667eea;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.info-card p, .plan-card p {
+    color: #666;
+}
+
+/* Product Information */
+.product-details {
+    background: #f8f9fa;
+    padding: 2rem;
+    border-radius: 10px;
+    margin: 1.5rem 0;
+}
+
+.ingredients-section {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.ingredients-section h3 {
+    margin-top: 0;
+}
+
+.ingredients-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.ingredients-section li {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #e0e0e0;
+    color: #666;
+}
+
+.ingredients-section li:last-child {
+    border-bottom: none;
+}
+
+.quality-features {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.quality-features h3 {
+    margin-top: 0;
+}
+
+.quality-features p {
+    color: #666;
+}
+
+.product-details > h3 {
+    margin-top: 1.5rem;
+}
+
+.product-details > ul {
+    list-style: none;
+    padding: 0;
+}
+
+.product-details > ul li {
+    padding: 0.5rem 0;
+    color: #666;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.product-details > ul li:last-child {
+    border-bottom: none;
+}
+
+.product-details > p {
+    color: #666;
+}
+
+/* Process Details */
+.process-details {
+    background: #f8f9fa;
+    padding: 2rem;
+    border-radius: 10px;
+    margin: 1.5rem 0;
+}
+
+.process-details h3 {
+    margin-top: 1.5rem;
+}
+
+.process-details h3:first-child {
+    margin-top: 0;
+}
+
+.process-details p {
+    color: #666;
+}
+
+/* Distribution Info */
+.distribution-info {
+    background: #f8f9fa;
+    padding: 2rem;
+    border-radius: 10px;
+    margin: 1.5rem 0;
+}
+
+.distribution-info h3 {
+    margin-top: 1.5rem;
+}
+
+.distribution-info h3:first-child {
+    margin-top: 0;
+}
+
+.distribution-info p {
+    color: #666;
+}
+
+/* Challenges Section */
+.challenges-list {
+    background: #f8f9fa;
+    padding: 2rem;
+    border-radius: 10px;
+    margin: 1.5rem 0;
+}
+
+.challenges-list h3 {
+    margin-top: 0;
+    color: #667eea;
+}
+
+.challenges-list ul {
+    list-style: none;
+    padding: 0;
+}
+
+.challenges-list li {
+    margin: 0.8rem 0;
+    padding: 0.5rem 0;
+    color: #666;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.challenges-list li:last-child {
+    border-bottom: none;
+}
+
+.challenges-list strong {
+    color: #667eea;
+}
+
+/* Sustainability Section */
+.sustainability {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    margin: 2rem 0;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.sustainability h2 {
+    color: white;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.sustainability p {
+    font-size: 1.1rem;
+    text-align: center;
+    margin: 0;
+    opacity: 0.95;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .about-section {
+        padding: 1rem;
+    }
+    
+    .about-section h1 {
+        font-size: 2.5rem;
+        padding: 3rem 1rem;
+        margin-left: -1rem;
+        margin-right: -1rem;
+        margin-top: -1rem;
+    }
+    
+    .about-section h2 {
+        font-size: 2rem;
+    }
+    
+    .about-section h3 {
+        font-size: 1.3rem;
+    }
+    
+    .info-grid, .plans-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    
+    .intro-content, .product-details, .process-details, 
+    .distribution-info, .challenges-list, .sustainability {
+        padding: 1.5rem;
+    }
+    
+    .info-card, .plan-card {
+        padding: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .about-section {
+        padding: 0.5rem;
+    }
+    
+    .about-section h1 {
+        font-size: 1.8rem;
+        padding: 2rem 0.5rem;
+        margin-left: -0.5rem;
+        margin-right: -0.5rem;
+        margin-top: -0.5rem;
+    }
+    
+    .about-section h2 {
+        font-size: 1.5rem;
+    }
+    
+    .about-section h3 {
+        font-size: 1.2rem;
+    }
+    
+    .intro-content, .product-details, .process-details, 
+    .distribution-info, .challenges-list, .sustainability {
+        padding: 1rem;
+    }
+    
+    .info-card, .plan-card {
+        padding: 1rem;
+    }
+}
