@@ -10,40 +10,43 @@
 
 .about-section h1 {
     text-align: center;
-    color: #8B4513;
+    color: #667eea;
     font-size: 2.5rem;
     margin-bottom: 2rem;
-    border-bottom: 3px solid #FFD700;
+    border-bottom: 3px solid #ffd700;
     padding-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .about-section h2 {
-    color: #8B4513;
+    color: #667eea;
     font-size: 1.8rem;
     margin: 2.5rem 0 1.5rem 0;
-    border-left: 4px solid #FFD700;
+    border-left: 4px solid #ffd700;
     padding-left: 1rem;
 }
 
 .about-section h3 {
-    color: #CD853F;
+    color: #764ba2;
     font-size: 1.3rem;
     margin: 1.5rem 0 1rem 0;
 }
 
 /* Intro Content */
 .intro-content {
-    background: linear-gradient(135deg, #FFF8DC, #F5DEB3);
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
     padding: 2rem;
     border-radius: 10px;
     margin-bottom: 2rem;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
 }
 
 .intro-content p {
     font-size: 1.1rem;
     text-align: center;
     margin: 0;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
 }
 
 /* Grid Layouts */
@@ -55,39 +58,41 @@
 }
 
 .info-card, .plan-card {
-    background: #FFFACD;
+    background: white;
     padding: 1.5rem;
-    border-radius: 8px;
-    border: 2px solid #DEB887;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .info-card:hover, .plan-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
 }
 
 .info-card h3, .plan-card h3 {
-    color: #8B4513;
+    color: #667eea;
     margin-top: 0;
-    border-bottom: 2px solid #FFD700;
+    border-bottom: 2px solid #ffd700;
     padding-bottom: 0.5rem;
 }
 
 /* Product Information */
 .product-details {
-    background: #F0F8FF;
+    background: #f8f9fa;
     padding: 2rem;
     border-radius: 10px;
     margin: 1.5rem 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 }
 
 .ingredients-section {
-    background: #E6FFE6;
+    background: white;
     padding: 1.5rem;
     border-radius: 8px;
     margin-bottom: 1.5rem;
-    border-left: 5px solid #32CD32;
+    border-left: 5px solid #667eea;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .ingredients-section ul {
@@ -97,7 +102,7 @@
 
 .ingredients-section li {
     padding: 0.5rem 0;
-    border-bottom: 1px dotted #90EE90;
+    border-bottom: 1px dotted #e9ecef;
 }
 
 .ingredients-section li:last-child {
@@ -105,33 +110,37 @@
 }
 
 .quality-features {
-    background: #FFF0F5;
+    background: white;
     padding: 1.5rem;
     border-radius: 8px;
     margin-bottom: 1.5rem;
-    border-left: 5px solid #FF69B4;
+    border-left: 5px solid #764ba2;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .shelf-life {
-    background: #F0FFFF;
+    background: white;
     padding: 1.5rem;
     border-radius: 8px;
-    border-left: 5px solid #00CED1;
+    border-left: 5px solid #ffd700;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 /* Production Process */
 .process-details {
-    background: #FFFAF0;
+    background: #f8f9fa;
     padding: 2rem;
     border-radius: 10px;
     margin: 1.5rem 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 }
 
 .process-details ul {
-    background: #FFF8DC;
+    background: white;
     padding: 1rem 1rem 1rem 2rem;
     border-radius: 5px;
-    border-left: 3px solid #DAA520;
+    border-left: 3px solid #667eea;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .process-details li {
@@ -140,38 +149,41 @@
 
 /* Distribution Section */
 .distribution-info {
-    background: #F5FFFA;
+    background: #f8f9fa;
     padding: 2rem;
     border-radius: 10px;
     margin: 1.5rem 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 }
 
 .distribution-info h3 {
-    color: #2E8B57;
-    border-bottom: 2px solid #98FB98;
+    color: #667eea;
+    border-bottom: 2px solid #ffd700;
     padding-bottom: 0.5rem;
 }
 
 /* Challenges Section */
 .challenges-list {
-    background: #FFF5EE;
+    background: #f8f9fa;
     padding: 2rem;
     border-radius: 10px;
     margin: 1.5rem 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 }
 
 .challenges-list h3 {
-    color: #D2691E;
-    border-bottom: 2px solid #F4A460;
+    color: #764ba2;
+    border-bottom: 2px solid #ffd700;
     padding-bottom: 0.5rem;
 }
 
 .challenges-list ul {
-    background: #FFEBCD;
+    background: white;
     padding: 1rem 1rem 1rem 2rem;
     border-radius: 5px;
-    border-left: 3px solid #CD853F;
+    border-left: 3px solid #764ba2;
     margin: 1rem 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .challenges-list li {
@@ -180,36 +192,44 @@
 }
 
 .challenges-list strong {
-    color: #8B4513;
+    color: #667eea;
 }
 
 /* Sustainability Section */
 .sustainability {
-    background: linear-gradient(135deg, #E0FFE0, #F0FFF0);
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
     padding: 2rem;
     border-radius: 10px;
     margin: 2rem 0;
-    border: 2px solid #90EE90;
+    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+}
+
+.sustainability h2 {
+    color: white;
+    border-left: 4px solid #ffd700;
 }
 
 .sustainability p {
     font-size: 1.1rem;
     text-align: center;
     margin: 0;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
 }
 
 /* Customer Feedback */
 .customer-feedback {
-    background: linear-gradient(135deg, #FFE4E1, #FFF0F5);
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
     padding: 2rem;
     border-radius: 10px;
     margin: 2rem 0;
-    border: 2px solid #FF69B4;
+    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
 }
 
 .customer-feedback h2 {
     text-align: center;
-    color: #DC143C;
+    color: white;
     border: none;
     margin-bottom: 1rem;
 }
@@ -218,6 +238,7 @@
     font-size: 1.1rem;
     text-align: center;
     margin: 0;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
 }
 
 /* Responsive Design */
@@ -273,11 +294,13 @@
 
 /* Special Highlighting */
 .special-offer {
-    background: #FFE4B5;
+    background: #ffd700;
+    color: #333;
     padding: 1rem;
     border-radius: 5px;
-    border-left: 4px solid #FF8C00;
+    border-left: 4px solid #667eea;
     margin: 1rem 0;
+    box-shadow: 0 2px 4px rgba(255, 215, 0, 0.3);
 }
 
 /* Print Styles */
