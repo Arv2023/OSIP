@@ -32,6 +32,7 @@
 * supplier contacts
 * q\&a page for any questions
 * Feedback page (form)
+* malino gowo (IBU LOCATION)
 
 
 

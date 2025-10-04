@@ -1,0 +1,23 @@
+<div class="business-info">
+            <h2>Our Business</h2>
+            <div class="info-grid">
+                <div class="info-card">
+                    <h3>Small Team, Big Quality</h3>
+                    <p>Our operation consists of just 2 dedicated employees, with the owner personally handling all
+                        packaging to ensure every product meets our high-quality standards.</p>
+                </div>
+
+                <div class="info-card">
+                    <h3>Business Model</h3>
+                    <p>We operate as a wholesale supplier - customers purchase from us and resell to their own markets.
+                        No retail sales directly to end consumers.</p>
+                </div>
+
+                <div class="info-card">
+                    <h3>Pricing</h3>
+                    <p>We offer 2 bottles for $10, keeping our prices affordable so our buyers can maintain healthy
+                        profit margins when reselling.</p>
+                    <p><strong>Special Offer:</strong> New customers pay only half price on their first purchase!</p>
+                </div>
+            </div>
+        </div>
