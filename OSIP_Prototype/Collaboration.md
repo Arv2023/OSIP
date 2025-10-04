@@ -1,5 +1,3 @@
-
-
 ### Facebook
 
 * pictures of product to post and sell
