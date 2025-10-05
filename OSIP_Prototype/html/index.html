@@ -27,7 +27,7 @@
     <header>
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
-                <a class="navbar-brand logo" href="index.html">Malino</a>
+                <a class="navbar-brand logo" href="index.html"><img src="../../images/image.png" alt="Malino Logo"></a>
 
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                     <span class="navbar-toggler-icon"></span>
@@ -42,7 +42,7 @@
                             <a class="nav-link" href="product.html">Products</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="product.html" role="button"
+                            <a class="nav-link dropdown-toggle" href="about.html" role="button"
                                 data-bs-toggle="dropdown">
                                 About
                             </a>
@@ -93,6 +93,67 @@
     </section>
 
 
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <h2>Frequently Asked Questions</h2>
+            <p class="faq-subtitle">Got questions? We've got answers!</p>
+            <div class="faq-grid">
+                <div class="faq-column">
+                    <div class="faq-item">
+                        <button class="faq-question" data-bs-toggle="collapse" data-bs-target="#faq1">
+                            <span>How do I place an order?</span>
+                            <i class="faq-icon">+</i>
+                        </button>
+                        <div id="faq1" class="collapse faq-answer">
+                            <div class="faq-content">
+                                <p>Call us to pre-order. New customers get 50% off their first order!</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question" data-bs-toggle="collapse" data-bs-target="#faq2">
+                            <span>What makes it different?</span>
+                            <i class="faq-icon">+</i>
+                        </button>
+                        <div id="faq2" class="collapse faq-answer">
+                            <div class="faq-content">
+                                <p>100% natural with 85% premium passion fruit. No artificial colors or flavors.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-column">
+                    <div class="faq-item">
+                        <button class="faq-question" data-bs-toggle="collapse" data-bs-target="#faq3">
+                            <span>Do you offer wholesale?</span>
+                            <i class="faq-icon">+</i>
+                        </button>
+                        <div id="faq3" class="collapse faq-answer">
+                            <div class="faq-content">
+                                <p>Yes! 2 bottles for $10. Perfect for resellers with healthy profit margins.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question" data-bs-toggle="collapse" data-bs-target="#faq4">
+                            <span>Can I sample first?</span>
+                            <i class="faq-icon">+</i>
+                        </button>
+                        <div id="faq4" class="collapse faq-answer">
+                            <div class="faq-content">
+                                <p>Absolutely! Free samples available. Find us at exhibitions and events.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section class="cta-section">
         <h2>Want to Learn More About Our Product?</h2>
         <p>Learn About how this business started and how it sources its ingredients.</p>
@@ -102,8 +163,73 @@
 
 
     <footer>
-        <p>&copy; 2024 Malino Passion Fruit Syrup. All rights reserved.</p>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>📍 Location</h4>
+                <p>Malino District<br>South Sulawesi, Indonesia</p>
+            </div>
+
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <div class="footer-links">
+                    <a href="feedback.html">Give Feedback</a>
+                    <a href="#terms" data-bs-toggle="modal" data-bs-target="#termsModal">Terms of Use</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2024 Malino Passion Fruit Syrup. All rights reserved.</p>
+        </div>
     </footer>
+
+    <!-- Terms of Use Modal -->
+    <div class="modal fade" id="termsModal" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Terms of Use</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <h6>Ordering Terms</h6>
+                    <ul>
+                        <li>All products must be pre-ordered by phone - no walk-in purchases</li>
+                        <li>Orders are subject to product availability and production capacity</li>
+                        <li>Payment is required at pickup or delivery</li>
+                        <li>New customers receive 50% off their first order</li>
+                    </ul>
+
+                    <h6>Product Information</h6>
+                    <ul>
+                        <li>All products are made with natural ingredients</li>
+                        <li>Shelf life: 12 months from production date</li>
+                        <li>Products are intended for wholesale/resale customers</li>
+                        <li>Free samples available upon request</li>
+                    </ul>
+
+                    <h6>Business Operations</h6>
+                    <ul>
+                        <li>Production operates Monday-Saturday, 8 AM - 6 PM</li>
+                        <li>Equipment limitations may affect production schedules</li>
+                        <li>Delivery available using owner's personal vehicle</li>
+                        <li>Contact information provided on product packaging</li>
+                    </ul>
+
+                    <h6>Quality Guarantee</h6>
+                    <ul>
+                        <li>Owner personally handles all packaging for quality assurance</li>
+                        <li>3-month stock rotation ensures freshness</li>
+                        <li>Customer satisfaction is our priority</li>
+                        <li>Feedback and suggestions are always welcome</li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
 </body>
 
