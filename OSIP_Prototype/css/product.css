@@ -107,21 +107,49 @@
     animation: slideInRight 0.6s ease forwards;
     opacity: 0;
     clear: both;
+    display: block;
+    min-height: 280px;
+}
+
+/* Product Placeholder Image */
+.product-placeholder {
+    position: absolute;
     display: flex;
-    align-items: flex-start;
-    gap: 2rem;
+    align-items: center;
     justify-content: center;
+    width: 250px;
+    height: 250px;
+    background: white;
+    border-radius: 50%;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    overflow: hidden;
+    border: 3px solid #FFD700;
+}
+
+.product-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
 }
 
 /* Alternate left and right */
-.product-item:nth-child(odd) {
-    justify-content: flex-end;
-    padding-right: calc(50% + 2rem);
+/* Odd items: content on left, image on right */
+.product-item:nth-child(odd) .product-content {
+    left: 2rem;
 }
 
-.product-item:nth-child(even) {
-    justify-content: flex-start;
-    padding-left: calc(50% + 2rem);
+.product-item:nth-child(odd) .product-placeholder {
+    right: calc(50% - 280px);
+}
+
+/* Even items: image on left, content on right */
+.product-item:nth-child(even) .product-content {
+    right: 2rem;
+}
+
+.product-item:nth-child(even) .product-placeholder {
+    left: calc(50% - 280px);
 }
 
 .product-item:nth-child(1) { animation-delay: 0.1s; }
@@ -190,14 +218,14 @@
 
 /* Product Content */
 .product-content {
+    position: absolute;
     background: white;
     border-radius: 15px;
     padding: 2rem;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
-    position: relative;
+    width: calc(50% - 5rem);
     max-width: 500px;
-    width: 100%;
 }
 
 /* Border and pointer for odd items (left side - points right) */

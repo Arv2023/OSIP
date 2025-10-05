@@ -22,7 +22,7 @@
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
                 <a class="navbar-brand logo" href="index.html">
-                    <img src="../../images/image.png" alt="Malino Passion Fruit Logo">
+                    <img src="../../images/image.png" alt="Malino Passion Fruit Logo" class="img-hero">
                 </a>
 
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -88,7 +88,7 @@
                     100% natural ingredients, crafted with care.
                 </p>
 
-                <a href="contact.html" class="cta-button">Order Now</a>
+                <a href="contact.html"><img src="../../images/OrderNow.png" alt="Order Now"></a>
 
                 <a href="#features" class="scroll-down-arrow" aria-label="Scroll to features section">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -158,14 +158,14 @@
 
 
                     <!-- FAQ Card 5 -->
-                    <div class="faq-card">
+                    <div class="faq-card" data-bs-toggle="modal" data-bs-target="#faqModal5">
                         <div class="faq-card-content">
                             <h3>Facility Operating Hours</h3>
                             <span class="read-more">Click to learn more →</span>
                         </div>
                     </div>
 
-                    <div class="faq-card">
+                    <div class="faq-card" data-bs-toggle="modal" data-bs-target="#faqModal6">
                         <div class="faq-card-content">
                             <h3>Do you offer bulk or wholesale orders?</h3>
                             <span class="read-more">Click to learn more →</span>
@@ -268,6 +268,53 @@
                             <li>Contact us to arrange a tasting session</li>
                             <li>Experience the authentic tropical flavor before you buy</li>
                             <li>Perfect for first-time customers</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="modal fade" id="faqModal5" tabindex="-1" aria-labelledby="faqModal5Label" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="faqModal5Label">What are your working hours?</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="faq-modal-image">
+                            <img src="https://via.placeholder.com/500x300/C7342A/F4E8D8?text=Free+Samples"
+                                alt="Product sampling" class="img-fluid rounded">
+                        </div>
+                        <ul class="faq-list">
+                            <li>Our working hours are Monday to Friday, 9 AM to 5 PM</li>
+                            <li>We are closed on weekends and public holidays</li>
+                            <li>Feel free to reach out via email or phone during working hours</li>
+                            <li>We strive to respond to all inquiries within 24 hours</li>
+                            <li>Thank you for your understanding!</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="modal fade" id="faqModal6" tabindex="-1" aria-labelledby="faqModal6Label" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="faqModal6Label">Do you offer bulk or wholesale discounts?</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="faq-modal-image">
+                            <img src="https://via.placeholder.com/500x300/C7342A/F4E8D8?text=Free+Samples"
+                                alt="Product sampling" class="img-fluid rounded">
+                        </div>
+                        <ul class="faq-list">
+                            <li>We normally sell our products in bulk</li>
+                            <li>We also offer wholesale discounts for larger orders</li>
                         </ul>
                     </div>
                 </div>
