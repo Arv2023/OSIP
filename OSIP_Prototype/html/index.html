@@ -10,6 +10,7 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="../css/basic.css">
+    <link rel="stylesheet" href="../css/home.css">
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -34,9 +35,6 @@
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="index.html">Home</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="product.html">Products</a>
-                        </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="about.html" role="button"
                                 data-bs-toggle="dropdown" aria-expanded="false">
@@ -44,17 +42,19 @@
                             </a>
                             <ul class="dropdown-menu">
                                 <li><a class="dropdown-item" href="about.html">Our History</a></li>
-                                <li><a class="dropdown-item" href="about.html#product">Our Products</a></li>
                                 <li><a class="dropdown-item" href="about.html#production">Production Process</a></li>
                                 <li><a class="dropdown-item" href="about.html#distribution">Distribution</a></li>
                                 <li><a class="dropdown-item" href="about.html#future">Our Future</a></li>
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="contact.html">Contact</a>
+                            <a class="nav-link" href="product.html">Products</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="feedback.html">Feedback</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contacts</a>
                         </li>
                     </ul>
                 </div>
@@ -63,27 +63,55 @@
     </header>
 
     <main>
+        <svg class="rainbow" viewBox="0 0 1200 500" preserveAspectRatio="xMidYMin slice" aria-hidden="true">
+            <defs>
+                <clipPath id="clip">
+                    <rect x="0" y="0" width="1200" height="500" rx="40" ry="40" />
+                </clipPath>
+            </defs>
+            <g clip-path="url(#clip)">
+                <path d="M-50,500 A650,650 0 0 1 1250,500 L1250,650 L-50,650 Z" fill="#2FA34A" />
+                <path d="M20,500 A580,580 0 0 1 1180,500 L1180,650 L20,650 Z" fill="#FFD64D" />
+                <path d="M90,500 A510,510 0 0 1 1110,500 L1110,650 L90,650 Z" fill="#F28C1B" />
+                <path d="M160,500 A440,440 0 0 1 1040,500 L1040,650 L160,650 Z" fill="#C7342A" />
+            </g>
+        </svg>
         <section class="hero-section">
+            <div class="pattern" aria-hidden="true"></div>
+
             <div class="hero-content">
-                <h1>SariBuah Malino Passion Fruit Syrup</h1>
-                <p class="hero-subtitle">Experience the Taste of Premium Tropical Passion Fruit Syrup</p>
+
+
+                <h1>SariBuah Malino<br />Passion Fruit Syrup</h1>
+                <p class="hero-subtitle">
+                    Experience the authentic taste of premium passion fruit syrup from Malino, South Sulawesi.
+                    100% natural ingredients, crafted with care.
+                </p>
+
                 <a href="contact.html" class="cta-button">Order Now</a>
+
+                <a href="#features" class="scroll-down-arrow" aria-label="Scroll to features section">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="6 9 12 15 18 9"></polyline>
+                    </svg>
+                </a>
             </div>
         </section>
 
         <section class="features-section">
-            <h2>Why Choose Markisa?</h2>
+            <h2 id="features">Why Choose Markisa?</h2>
             <div class="features-grid">
                 <div class="feature-card">
-                    <h3>🍎 100% Natural</h3>
+                    <h3>100% Natural</h3>
                     <p>Made from real passion fruit with no artificial flavors or preservatives</p>
                 </div>
                 <div class="feature-card">
-                    <h3>✨ Premium Quality</h3>
+                    <h3>Premium Quality</h3>
                     <p>Carefully crafted to deliver authentic tropical flavor in every drop</p>
                 </div>
                 <div class="feature-card">
-                    <h3>🍹 Versatile Use</h3>
+                    <h3>Versatile Use</h3>
                     <p>Perfect for drinks, smoothies, desserts, and more</p>
                 </div>
             </div>
@@ -96,68 +124,155 @@
                 <p class="faq-subtitle">Everything you need to know about our passion fruit products</p>
 
                 <div class="faq-grid">
-                    <div class="faq-column">
-                        <div class="faq-item">
-                            <button class="faq-question" type="button" data-bs-toggle="collapse" data-bs-target="#faq1"
-                                aria-expanded="false" aria-controls="faq1">
-                                <span>How do I place an order?</span>
-                                <span class="faq-icon">+</span>
-                            </button>
-                            <div class="collapse faq-answer" id="faq1">
-                                <div class="faq-content">
-                                    <p>Call us to pre-order - we don't accept walk-ins. New customers get 50% off their
-                                        first purchase!</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="faq-item">
-                            <button class="faq-question" type="button" data-bs-toggle="collapse" data-bs-target="#faq2"
-                                aria-expanded="false" aria-controls="faq2">
-                                <span>What makes your product different?</span>
-                                <span class="faq-icon">+</span>
-                            </button>
-                            <div class="collapse faq-answer" id="faq2">
-                                <div class="faq-content">
-                                    <p>100% natural ingredients - 85% passion fruit, 15% sugar and pH water. No
-                                        artificial colors, flavors, or citrus.</p>
-                                </div>
-                            </div>
+                    <!-- FAQ Card 1 -->
+                    <div class="faq-card" data-bs-toggle="modal" data-bs-target="#faqModal1">
+                        <div class="faq-card-content">
+                            <h3>How do I place an order?</h3>
+                            <span class="read-more">Click to learn more →</span>
                         </div>
                     </div>
 
-                    <div class="faq-column">
-                        <div class="faq-item">
-                            <button class="faq-question" type="button" data-bs-toggle="collapse" data-bs-target="#faq3"
-                                aria-expanded="false" aria-controls="faq3">
-                                <span>Do you offer wholesale pricing?</span>
-                                <span class="faq-icon">+</span>
-                            </button>
-                            <div class="collapse faq-answer" id="faq3">
-                                <div class="faq-content">
-                                    <p>Yes! We sell 2 bottles for $10. Buyers can resell at higher prices. Perfect for
-                                        retailers and distributors.</p>
-                                </div>
-                            </div>
+                    <!-- FAQ Card 2 -->
+                    <div class="faq-card" data-bs-toggle="modal" data-bs-target="#faqModal2">
+                        <div class="faq-card-content">
+                            <h3>What makes your product different?</h3>
+                            <span class="read-more">Click to learn more →</span>
                         </div>
+                    </div>
 
-                        <div class="faq-item">
-                            <button class="faq-question" type="button" data-bs-toggle="collapse" data-bs-target="#faq4"
-                                aria-expanded="false" aria-controls="faq4">
-                                <span>Can I sample before buying?</span>
-                                <span class="faq-icon">+</span>
-                            </button>
-                            <div class="collapse faq-answer" id="faq4">
-                                <div class="faq-content">
-                                    <p>Absolutely! We provide free samples at exhibitions and events. Contact us to
-                                        arrange a tasting.</p>
-                                </div>
-                            </div>
+                    <!-- FAQ Card 3 -->
+                    <div class="faq-card" data-bs-toggle="modal" data-bs-target="#faqModal3">
+                        <div class="faq-card-content">
+                            <h3>Do you offer wholesale pricing?</h3>
+                            <span class="read-more">Click to learn more →</span>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Card 4 -->
+                    <div class="faq-card" data-bs-toggle="modal" data-bs-target="#faqModal4">
+                        <div class="faq-card-content">
+                            <h3>Can I sample before buying?</h3>
+                            <span class="read-more">Click to learn more →</span>
+                        </div>
+                    </div>
+
+
+                    <!-- FAQ Card 5 -->
+                    <div class="faq-card">
+                        <div class="faq-card-content">
+                            <h3>Facility Operating Hours</h3>
+                            <span class="read-more">Click to learn more →</span>
+                        </div>
+                    </div>
+
+                    <div class="faq-card">
+                        <div class="faq-card-content">
+                            <h3>Do you offer bulk or wholesale orders?</h3>
+                            <span class="read-more">Click to learn more →</span>
                         </div>
                     </div>
                 </div>
-            </div>
         </section>
+
+        <!-- FAQ Modals -->
+        <!-- Modal 1 -->
+        <div class="modal fade" id="faqModal1" tabindex="-1" aria-labelledby="faqModal1Label" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="faqModal1Label">How do I place an order?</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="faq-modal-image">
+                            <img src="C:\Users\arvii\Desktop\OSIP\images\image.png" alt="Order process"
+                                class="img-fluid rounded">
+                        </div>
+                        <ul class="faq-list">
+                            <li>Call us to pre-order - we don't accept walk-ins</li>
+                            <li>All products must be ordered by phone in advance</li>
+                            <li>We'll confirm availability and give you pickup details</li>
+                            <li>New customers get 50% off their first order</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal 2 -->
+        <div class="modal fade" id="faqModal2" tabindex="-1" aria-labelledby="faqModal2Label" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="faqModal2Label">🍎 What makes your product different?</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="faq-modal-image">
+                            <img src="https://via.placeholder.com/500x300/2FA34A/F4E8D8?text=Natural+Ingredients"
+                                alt="Natural ingredients" class="img-fluid rounded">
+                        </div>
+                        <ul class="faq-list">
+                            <li>100% natural ingredients with no artificial additives</li>
+                            <li>85% passion fruit for authentic tropical flavor</li>
+                            <li>15% sugar and pH-balanced water</li>
+                            <li>No artificial colors, flavors, or citrus additives</li>
+                            <li>Crafted with care from Malino's finest passion fruits</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal 3 -->
+        <div class="modal fade" id="faqModal3" tabindex="-1" aria-labelledby="faqModal3Label" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="faqModal3Label">💰 Do you offer wholesale pricing?</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="faq-modal-image">
+                            <img src="https://via.placeholder.com/500x300/F28C1B/231F20?text=Wholesale+Pricing"
+                                alt="Wholesale pricing" class="img-fluid rounded">
+                        </div>
+                        <ul class="faq-list">
+                            <li>Yes! We offer competitive wholesale pricing</li>
+                            <li>2 bottles for 100,000 rupiah</li>
+                            <li>Perfect for retailers and distributors</li>
+                            <li>Buyers can resell at higher prices for profit</li>
+                            <li>Contact us for bulk order discounts</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal 4 -->
+        <div class="modal fade" id="faqModal4" tabindex="-1" aria-labelledby="faqModal4Label" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="faqModal4Label">🎁 Can I sample before buying?</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="faq-modal-image">
+                            <img src="https://via.placeholder.com/500x300/C7342A/F4E8D8?text=Free+Samples"
+                                alt="Product sampling" class="img-fluid rounded">
+                        </div>
+                        <ul class="faq-list">
+                            <li>Absolutely! We provide free samples</li>
+                            <li>Available at exhibitions and events</li>
+                            <li>Contact us to arrange a tasting session</li>
+                            <li>Experience the authentic tropical flavor before you buy</li>
+                            <li>Perfect for first-time customers</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <section class="cta-section">
             <h2>Want to Learn More About Our Product?</h2>
@@ -169,7 +284,7 @@
     <footer>
         <div class="footer-top">
             <div class="footer-brand">
-                <h3>Makassar Passion Fruit</h3>
+                <h3>SariBuah Malino Passion Fruit Syrup</h3>
                 <p>Premium Natural Syrup</p>
                 <p>Malino District, South Sulawesi, Indonesia</p>
             </div>

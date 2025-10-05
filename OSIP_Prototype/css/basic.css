@@ -5,15 +5,19 @@
     box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
     color: #333;
 }
 
-/* Header and Navigation */
+/* Header and Navigation - SHARED ACROSS ALL PAGES */
 header {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #C7342A 0%, #F28C1B 50%, #FFD64D 100%);
     padding: 0;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     position: sticky;
@@ -34,14 +38,13 @@ nav {
     text-decoration: none;
 }
 
-/* Logo Image Styling - IMPROVED */
+/* Logo Image Styling */
 .logo img {
     height: 50px;
     width: auto;
     max-width: 150px;
     object-fit: contain;
     transition: all 0.3s ease;
-    /* Remove the white filter that was making it invisible */
     filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
 }
 
@@ -50,7 +53,7 @@ nav {
     transform: scale(1.05);
 }
 
-/* Ensure logo works with both text and image */
+/* Navbar Brand */
 .navbar-brand {
     display: flex;
     align-items: center;
@@ -96,7 +99,7 @@ nav {
     color: #ffd700 !important;
 }
 
-/* Hover Dropdown Effect - FIXED */
+/* Dropdown Menu */
 .dropdown-menu {
     background: rgba(255, 255, 255, 0.98);
     backdrop-filter: blur(10px);
@@ -124,12 +127,12 @@ nav {
 }
 
 .dropdown-item:hover {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #C7342A 0%, #F28C1B 100%);
     color: white !important;
     transform: translateX(5px);
 }
 
-/* Mobile navbar toggle */
+/* Mobile Navbar Toggle */
 .navbar-toggler {
     border: 2px solid white;
     padding: 0.5rem;
@@ -143,47 +146,7 @@ nav {
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
 
-/* Hero Section */
-.hero-section {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    color: white;
-    padding: 8rem 2rem;
-    text-align: center;
-    position: relative;
-    overflow: hidden;
-}
-
-.hero-section::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="%23ffffff" fill-opacity="0.1" d="M0,96L48,112C96,128,192,160,288,160C384,160,480,128,576,122.7C672,117,768,139,864,144C960,149,1056,139,1152,122.7C1248,107,1344,85,1392,74.7L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>') no-repeat bottom;
-    background-size: cover;
-}
-
-.hero-content {
-    position: relative;
-    z-index: 1;
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-.hero-section h1 {
-    font-size: 3.5rem;
-    margin-bottom: 1rem;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-}
-
-.hero-subtitle {
-    font-size: 1.5rem;
-    margin-bottom: 2rem;
-    opacity: 0.95;
-}
-
-/* Buttons - IMPROVED */
+/* Shared Button Styles */
 .cta-button {
     display: inline-block;
     background-color: #ffd700;
@@ -209,9 +172,9 @@ nav {
 .cta-button-secondary {
     display: inline-block;
     background-color: white;
-    color: #667eea;
+    color: #C7342A;
     padding: 1rem 3rem;
-    border: 2px solid #667eea;
+    border: 2px solid #C7342A;
     border-radius: 50px;
     font-size: 1.2rem;
     font-weight: bold;
@@ -221,184 +184,12 @@ nav {
 }
 
 .cta-button-secondary:hover {
-    background-color: #667eea;
+    background-color: #C7342A;
     color: white;
     text-decoration: none;
 }
 
-/* Features Section */
-.features-section {
-    padding: 5rem 2rem;
-    background-color: #f8f9fa;
-    text-align: center;
-}
-
-.features-section h2 {
-    font-size: 2.5rem;
-    color: #333;
-    margin-bottom: 3rem;
-}
-
-.features-grid {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
-}
-
-.feature-card {
-    background: white;
-    padding: 2rem;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.feature-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
-}
-
-.feature-card h3 {
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-    color: #667eea;
-}
-
-.feature-card p {
-    color: #666;
-}
-
-/* CTA Section */
-.cta-section {
-    padding: 5rem 2rem;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    color: white;
-    text-align: center;
-}
-
-.cta-section h2 {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-}
-
-.cta-section p {
-    font-size: 1.2rem;
-    margin-bottom: 2rem;
-    opacity: 0.95;
-}
-
-/* FAQ Section - FIXED TOGGLE BEHAVIOR */
-.faq-section {
-    padding: 5rem 2rem;
-    background-color: white;
-}
-
-.faq-section .container {
-    max-width: 900px;
-    margin: 0 auto;
-}
-
-.faq-section h2 {
-    text-align: center;
-    font-size: 2.5rem;
-    color: #667eea;
-    margin-bottom: 1rem;
-}
-
-.faq-subtitle {
-    text-align: center;
-    font-size: 1.2rem;
-    color: #666;
-    margin-bottom: 3rem;
-}
-
-.faq-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2rem;
-    align-items: start;
-}
-
-.faq-column {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-}
-
-.faq-item {
-    background: white;
-    border-radius: 10px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    transition: box-shadow 0.3s ease;
-}
-
-.faq-item:hover {
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
-}
-
-.faq-question {
-    width: 100%;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    color: white;
-    border: none;
-    padding: 1.5rem;
-    font-size: 1.1rem;
-    font-weight: 600;
-    text-align: left;
-    cursor: pointer;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    transition: all 0.3s ease;
-}
-
-.faq-question:hover {
-    background: linear-gradient(135deg, #5a6fd8 0%, #6a4190 100%);
-}
-
-/* Fixed: Proper toggle behavior */
-.faq-question[aria-expanded="true"] {
-    background: linear-gradient(135deg, #5a6fd8 0%, #6a4190 100%);
-}
-
-.faq-question[aria-expanded="true"] .faq-icon {
-    transform: rotate(45deg);
-    color: #ffd700;
-}
-
-.faq-icon {
-    font-size: 1.5rem;
-    font-weight: bold;
-    transition: all 0.3s ease;
-    display: inline-block;
-}
-
-.faq-answer {
-    background: #f8f9fa;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.3s ease;
-}
-
-.faq-answer.show {
-    max-height: 500px;
-}
-
-.faq-content {
-    padding: 1.5rem;
-    color: #333;
-    line-height: 1.6;
-    border-left: 4px solid #ffd700;
-}
-
-.faq-content p {
-    margin: 0;
-}
-
-/* Singapore Polytechnic Style Footer */
+/* Footer - SHARED ACROSS ALL PAGES */
 footer {
     background-color: #1a1a1a;
     color: white;
@@ -509,14 +300,14 @@ footer {
     font-size: 0.8rem;
 }
 
-/* Modal Customization */
+/* Modal Customization - SHARED */
 .modal-content {
     border-radius: 15px;
     border: none;
 }
 
 .modal-header {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #C7342A 0%, #F28C1B 100%);
     color: white;
     border-radius: 15px 15px 0 0;
 }
@@ -530,7 +321,7 @@ footer {
 }
 
 .modal-body h6 {
-    color: #667eea;
+    color: #C7342A;
     font-weight: bold;
     margin-top: 1.5rem;
     margin-bottom: 0.5rem;
@@ -552,42 +343,8 @@ footer {
     color: #555;
 }
 
-/* Responsive Design for FAQ and Footer */
+/* Responsive Design - SHARED */
 @media (max-width: 768px) {
-    .hero-section h1 {
-        font-size: 2.5rem;
-    }
-    
-    .hero-subtitle {
-        font-size: 1.2rem;
-    }
-    
-    .features-grid {
-        grid-template-columns: 1fr;
-    }
-    
-    .faq-section {
-        padding: 3rem 1rem;
-    }
-    
-    .faq-section h2 {
-        font-size: 2rem;
-    }
-    
-    .faq-grid {
-        grid-template-columns: 1fr;
-        gap: 1rem;
-    }
-    
-    .faq-question {
-        padding: 1rem;
-        font-size: 1rem;
-    }
-    
-    .faq-content {
-        padding: 1rem;
-    }
-    
     .footer-top {
         flex-direction: column;
         gap: 1.5rem;
@@ -610,26 +367,6 @@ footer {
     footer {
         padding: 1.5rem 0 0.5rem 0;
     }
-}
-
-@media (max-width: 480px) {
-    .hero-section {
-        padding: 5rem 1rem;
-    }
-    
-    .hero-section h1 {
-        font-size: 2rem;
-    }
-    
-    .faq-question {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 0.5rem;
-    }
-    
-    .faq-icon {
-        align-self: flex-end;
-    }
     
     .cta-button,
     .cta-button-secondary {
@@ -638,7 +375,7 @@ footer {
     }
 }
 
-/* Loading and Performance Optimization */
+/* Performance Optimization */
 @media (prefers-reduced-motion: reduce) {
     *,
     *::before,
@@ -652,9 +389,7 @@ footer {
 /* Print Styles */
 @media print {
     header,
-    footer,
-    .faq-section,
-    .cta-section {
+    footer {
         display: none;
     }
     
@@ -663,3 +398,5 @@ footer {
         background: white;
     }
 }
+
+

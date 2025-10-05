@@ -34,8 +34,8 @@
 
 /* Intro Content */
 .intro-content {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    color: white;
+    background: linear-gradient(135deg, #C7342A 0%, #F28C1B 50%, #FFD64D 100%);
+    color: rgb(255, 255, 255);
     padding: 2rem;
     border-radius: 10px;
     margin-bottom: 2rem;
