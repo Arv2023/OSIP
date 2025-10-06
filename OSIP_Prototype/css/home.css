@@ -73,14 +73,13 @@
     width: 14px;
     height: 14px;
     border-radius: 50%;
-    background: var(--plum);
+    /* background: var(--plum); */
     box-shadow: 20px 0 0 var(--yellow), 40px 0 0 var(--orange), 60px 0 0 var(--green);
 }
 
 .brand-name {
     font-weight: 800;
     letter-spacing: .5px;
-    color: var(--plum);
 }
 
 .hero-section h1 {

@@ -68,10 +68,23 @@ nav {
     align-items: center;
     text-decoration: none !important;
     padding: 0.5rem 1rem;
+    gap: 1rem;
 }
 
 .navbar-brand:hover {
     text-decoration: none !important;
+}
+
+.brand-name {
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    white-space: nowrap;
+}
+
+.navbar-brand:hover .brand-name {
+    color: #ffd700;
 }
 
 /* Bootstrap Navbar Customization */
@@ -356,6 +369,10 @@ footer {
 
 /* Responsive Design - SHARED */
 @media (max-width: 768px) {
+    .brand-name {
+        font-size: 0.9rem;
+    }
+    
     .footer-top {
         flex-direction: column;
         gap: 1.5rem;
