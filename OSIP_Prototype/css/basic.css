@@ -7,12 +7,16 @@
 
 html {
   scroll-behavior: smooth;
+  height: 100%;
 }
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
     color: #333;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 /* Header and Navigation - SHARED ACROSS ALL PAGES */
@@ -23,6 +27,11 @@ header {
     position: sticky;
     top: 0;
     z-index: 1000;
+}
+
+/* Main Content Area */
+main {
+    flex: 1 0 auto;
 }
 
 nav {
@@ -194,6 +203,8 @@ footer {
     background-color: #1a1a1a;
     color: white;
     padding: 2rem 0 1rem 0;
+    flex-shrink: 0;
+    margin-top: auto;
 }
 
 .footer-top {

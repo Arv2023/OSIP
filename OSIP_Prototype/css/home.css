@@ -18,10 +18,8 @@
     place-items: center;
     position: relative;
     overflow: hidden;
-    background:
-        radial-gradient(1800px 1200px at 80% -10%, rgba(255, 214, 77, .25), transparent 60%),
-        radial-gradient(1400px 900px at 10% -20%, rgba(242, 140, 27, .20), transparent 55%),
-        var(--cream);
+    background: url('../../images/backdrop1.png') center/cover no-repeat;
+    background-attachment: fixed;
 }
 
 /* Rainbow arc header */
@@ -36,7 +34,7 @@
 }
 
 /* Passion fruit pattern */
-.pattern {
+/* .pattern {
     position: absolute;
     inset: 0;
     pointer-events: none;
@@ -44,7 +42,7 @@
     background-size: 140px 140px;
     background-repeat: repeat;
     background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='140' height='140' viewBox='0 0 140 140'><defs><radialGradient id='g' cx='50%' cy='50%'><stop offset='0%' stop-color='%23FFD64D'/><stop offset='70%' stop-color='%23FFD64D'/><stop offset='100%' stop-color='transparent'/></radialGradient></defs><g transform='translate(20,20)'><circle cx='50' cy='50' r='44' fill='%23F4E8D8' /><circle cx='50' cy='50' r='40' fill='%23FFD64D' /><circle cx='50' cy='50' r='34' fill='%23F9EBA2' /><g fill='%23C7342A'><ellipse cx='50' cy='25' rx='5' ry='8'/><ellipse cx='70' cy='35' rx='5' ry='8'/><ellipse cx='75' cy='55' rx='5' ry='8'/><ellipse cx='60' cy='70' rx='5' ry='8'/><ellipse cx='40' cy='70' rx='5' ry='8'/><ellipse cx='25' cy='55' rx='5' ry='8'/><ellipse cx='30' cy='35' rx='5' ry='8'/></g><circle cx='50' cy='50' r='44' fill='none' stroke='%235A1E4A' stroke-width='6' /></g></svg>");
-}
+} */
 
 .hero-content {
     z-index: 2;

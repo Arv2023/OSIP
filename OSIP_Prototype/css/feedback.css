@@ -1,13 +1,32 @@
 /* Reviews Section */
 .reviews-section {
     padding: 4rem 2rem;
-    background: linear-gradient(135deg, #C7342A 0%, #F28C1B 50%, #FFD64D 100%);
+    background: url('../../images/backdrop1.png') center/cover no-repeat;
+    background-attachment: fixed;
     color: white;
     text-align: center;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    position: relative;
+}
+
+/* Optional: Add a subtle overlay for better text readability */
+.reviews-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.1);
+    z-index: 0;
+}
+
+.reviews-section .container {
+    position: relative;
+    z-index: 1;
 }
 
 .reviews-section h1 {
@@ -25,6 +44,8 @@
 .reviews-section .container {
     max-width: 1000px;
     margin: 0 auto;
+    position: relative;
+    z-index: 1;
 }
 
 /* Review Card */
