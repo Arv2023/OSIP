@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Translate Demo - Malino Passion Fruit</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+        }
+
+        .demo-header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 2rem;
+            border-radius: 15px;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+
+        .demo-section {
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            margin-bottom: 2rem;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .demo-section h2 {
+            color: #667eea;
+            border-bottom: 3px solid #ffd700;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .code-block {
+            background: #2d2d2d;
+            color: #f8f8f2;
+            padding: 1.5rem;
+            border-radius: 10px;
+            overflow-x: auto;
+            margin: 1rem 0;
+            font-family: 'Courier New', monospace;
+            font-size: 0.9rem;
+            line-height: 1.6;
+        }
+
+        .code-block code {
+            color: #f8f8f2;
+        }
+
+        .highlight {
+            background: #ffd700;
+            color: #333;
+            padding: 0.2rem 0.5rem;
+            border-radius: 3px;
+            font-weight: bold;
+        }
+
+        .success {
+            background: #d4edda;
+            color: #155724;
+            padding: 1rem;
+            border-left: 4px solid #28a745;
+            border-radius: 5px;
+            margin: 1rem 0;
+        }
+
+        .warning {
+            background: #fff3cd;
+            color: #856404;
+            padding: 1rem;
+            border-left: 4px solid #ffc107;
+            border-radius: 5px;
+            margin: 1rem 0;
+        }
+
+        .info {
+            background: #d1ecf1;
+            color: #0c5460;
+            padding: 1rem;
+            border-left: 4px solid #17a2b8;
+            border-radius: 5px;
+            margin: 1rem 0;
+        }
+
+        .checklist {
+            list-style: none;
+            padding: 0;
+        }
+
+        .checklist li {
+            padding: 0.5rem;
+            margin: 0.5rem 0;
+            background: #f8f9fa;
+            border-radius: 5px;
+        }
+
+        .checklist li:before {
+            content: "✅ ";
+            margin-right: 0.5rem;
+        }
+
+        .step {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 50px;
+            display: inline-block;
+            margin: 1rem 0;
+            font-weight: bold;
+        }
+
+        .visual-example {
+            border: 2px solid #667eea;
+            padding: 1rem;
+            border-radius: 10px;
+            background: #f8f9fa;
+            margin: 1rem 0;
+        }
+
+        .button-demo {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            padding: 0.75rem 2rem;
+            border-radius: 50px;
+            cursor: pointer;
+            font-size: 1rem;
+            font-weight: bold;
+            margin: 0.5rem;
+            transition: transform 0.3s ease;
+        }
+
+        .button-demo:hover {
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="demo-header">
+        <h1>🌍 Google Translate Implementation Demo</h1>
+        <p>Malino Passion Fruit Website</p>
+        <p style="font-size: 0.9rem; opacity: 0.9;">English ⇄ Bahasa Indonesia</p>
+    </div>
+
+    <div class="demo-section">
+        <h2>📊 Implementation Status</h2>
+        <div class="success">
+            <strong>✅ Implementation Complete!</strong><br>
+            Google Translate has been successfully added to 4 out of 9 pages.
+        </div>
+
+        <h3>Completed Pages:</h3>
+        <ul class="checklist">
+            <li>index.html (Homepage)</li>
+            <li>product.html (Products Page)</li>
+            <li>contact.html (Contact Page)</li>
+            <li>feedback.html (Feedback Form)</li>
+        </ul>
+
+        <div class="warning">
+            <strong>⚠️ Action Required:</strong><br>
+            5 pages still need the Google Translate widget and scripts added.<br>
+            See the implementation guide below.
+        </div>
+    </div>
+
+    <div class="demo-section">
+        <h2>🎯 How It Works</h2>
+
+        <div class="visual-example">
+            <h3 style="margin-top: 0;">Navigation Bar Example:</h3>
+            <div
+                style="display: flex; justify-content: space-between; align-items: center; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding: 1rem; border-radius: 10px; color: white;">
+                <div style="font-weight: bold; font-size: 1.2rem;">🍎 Malino</div>
+                <div style="display: flex; gap: 1.5rem; align-items: center;">
+                    <span>Home</span>
+                    <span>About</span>
+                    <span>Products</span>
+                    <span>Contact</span>
+                    <select
+                        style="background: rgba(255,255,255,0.2); border: 2px solid rgba(255,255,255,0.3); color: white; padding: 0.5rem; border-radius: 8px; cursor: pointer;">
+                        <option>Select Language</option>
+                        <option>English</option>
+                        <option>Indonesian</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <div class="info">
+            <strong>ℹ️ How Users Will Use It:</strong>
+            <ol style="margin: 0.5rem 0 0 1.5rem;">
+                <li>User opens any page on your website</li>
+                <li>User clicks the language dropdown in the navigation bar</li>
+                <li>User selects "Indonesian" or "English"</li>
+                <li>Page content automatically translates</li>
+                <li>Translation persists as user navigates</li>
+            </ol>
+        </div>
+    </div>
+
+    <div class="demo-section">
+        <h2>🔧 Implementation Guide</h2>
+
+        <div class="step">STEP 1: Add Widget to Navigation</div>
+        <p>Add this code inside the navbar's <code>&lt;ul class="navbar-nav ms-auto"&gt;</code>:</p>
+
+        <div class="code-block"><code>&lt;li class="nav-item"&gt;
+    &lt;div id="google_translate_element"&gt;&lt;/div&gt;
+&lt;/li&gt;</code></div>
+
+        <div class="step">STEP 2: Add Scripts Before &lt;/body&gt;</div>
+        <p>Add these two script tags just before the closing <code>&lt;/body&gt;</code> tag:</p>
+
+        <div class="code-block"><code>&lt;!-- Google Translate Script --&gt;
+&lt;script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"&gt;&lt;/script&gt;
+&lt;script src="../js/google-translate.js"&gt;&lt;/script&gt;</code></div>
+
+        <div class="success">
+            <strong>✅ That's it!</strong><br>
+            Two simple additions and Google Translate is fully functional.
+        </div>
+    </div>
+
+    <div class="demo-section">
+        <h2>📝 Remaining Pages to Update</h2>
+
+        <p>Apply the same two-step process to these 5 pages:</p>
+
+        <div
+            style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin: 1rem 0;">
+            <div style="background: #f8f9fa; padding: 1rem; border-radius: 10px; border-left: 4px solid #ffc107;">
+                <strong>⬜ about.html</strong><br>
+                <small>About Us page</small>
+            </div>
+            <div style="background: #f8f9fa; padding: 1rem; border-radius: 10px; border-left: 4px solid #ffc107;">
+                <strong>⬜ our-history.html</strong><br>
+                <small>Company history</small>
+            </div>
+            <div style="background: #f8f9fa; padding: 1rem; border-radius: 10px; border-left: 4px solid #ffc107;">
+                <strong>⬜ production-process.html</strong><br>
+                <small>Production details</small>
+            </div>
+            <div style="background: #f8f9fa; padding: 1rem; border-radius: 10px; border-left: 4px solid #ffc107;">
+                <strong>⬜ distribution.html</strong><br>
+                <small>Distribution info</small>
+            </div>
+            <div style="background: #f8f9fa; padding: 1rem; border-radius: 10px; border-left: 4px solid #ffc107;">
+                <strong>⬜ our-future.html</strong><br>
+                <small>Future plans</small>
+            </div>
+        </div>
+    </div>
+
+    <div class="demo-section">
+        <h2>🎨 Features & Benefits</h2>
+
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem;">
+            <div
+                style="background: linear-gradient(135deg, #e0f7fa 0%, #b2ebf2 100%); padding: 1.5rem; border-radius: 10px;">
+                <h3 style="margin-top: 0;">🌐 Two Languages</h3>
+                <p>English and Bahasa Indonesia support out of the box</p>
+            </div>
+
+            <div
+                style="background: linear-gradient(135deg, #f3e5f5 0%, #e1bee7 100%); padding: 1.5rem; border-radius: 10px;">
+                <h3 style="margin-top: 0;">🎨 Custom Styled</h3>
+                <p>Matches your website's orange/gold gradient theme perfectly</p>
+            </div>
+
+            <div
+                style="background: linear-gradient(135deg, #fff3e0 0%, #ffe0b2 100%); padding: 1.5rem; border-radius: 10px;">
+                <h3 style="margin-top: 0;">📱 Mobile Ready</h3>
+                <p>Responsive design works great on all devices</p>
+            </div>
+
+            <div
+                style="background: linear-gradient(135deg, #e8f5e9 0%, #c8e6c9 100%); padding: 1.5rem; border-radius: 10px;">
+                <h3 style="margin-top: 0;">🚀 Fast & Free</h3>
+                <p>Google Translate API is free and loads quickly</p>
+            </div>
+
+            <div
+                style="background: linear-gradient(135deg, #fce4ec 0%, #f8bbd0 100%); padding: 1.5rem; border-radius: 10px;">
+                <h3 style="margin-top: 0;">🔒 No Branding</h3>
+                <p>Google's annoying banner and logos are hidden</p>
+            </div>
+
+            <div
+                style="background: linear-gradient(135deg, #fff9c4 0%, #fff59d 100%); padding: 1.5rem; border-radius: 10px;">
+                <h3 style="margin-top: 0;">✨ Easy to Use</h3>
+                <p>Simple dropdown - users can switch instantly</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="demo-section">
+        <h2>📚 Documentation Files</h2>
+
+        <p>Three comprehensive documentation files have been created for your reference:</p>
+
+        <div style="display: grid; gap: 1rem; margin: 1rem 0;">
+            <div style="background: #667eea; color: white; padding: 1rem; border-radius: 10px;">
+                <strong>📄 GOOGLE_TRANSLATE_SUMMARY.md</strong><br>
+                <small>Complete overview of the implementation</small>
+            </div>
+
+            <div style="background: #764ba2; color: white; padding: 1rem; border-radius: 10px;">
+                <strong>📄 IMPLEMENTATION_CHECKLIST.md</strong><br>
+                <small>Step-by-step checklist for remaining pages</small>
+            </div>
+
+            <div style="background: #ffd700; color: #333; padding: 1rem; border-radius: 10px;">
+                <strong>📄 QUICK_TRANSLATE_GUIDE.md</strong><br>
+                <small>Quick copy-paste reference guide</small>
+            </div>
+        </div>
+    </div>
+
+    <div class="demo-section">
+        <h2>🧪 Testing Instructions</h2>
+
+        <div class="info">
+            <strong>To test the implementation:</strong>
+            <ol style="margin: 0.5rem 0 0 1.5rem;">
+                <li>Open any completed page (index.html, product.html, contact.html, or feedback.html)</li>
+                <li>Look for the language dropdown in the top-right navigation</li>
+                <li>Select "Indonesian" from the dropdown</li>
+                <li>Watch the page content translate to Bahasa Indonesia</li>
+                <li>Select "English" to switch back</li>
+            </ol>
+        </div>
+
+        <div class="warning">
+            <strong>⚠️ Note:</strong><br>
+            Google Translate takes 2-3 seconds to load. If the dropdown doesn't appear immediately, wait a moment and
+            refresh the page.
+        </div>
+    </div>
+
+    <div class="demo-section" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white;">
+        <h2 style="color: white; border-bottom-color: #ffd700;">🎉 Success!</h2>
+
+        <p style="font-size: 1.1rem;">
+            Google Translate has been successfully implemented on your Malino Passion Fruit website!
+        </p>
+
+        <p>
+            <strong>Next Steps:</strong>
+        </p>
+        <ul>
+            <li>✅ Test the 4 completed pages</li>
+            <li>⬜ Add implementation to 5 remaining pages</li>
+            <li>⬜ Get feedback from Indonesian-speaking users</li>
+            <li>⬜ Consider professional translation for critical content</li>
+        </ul>
+
+        <div style="text-align: center; margin-top: 2rem;">
+            <button class="button-demo"
+                onclick="alert('Open any HTML file in the /html/ folder to see Google Translate in action!')">
+                🚀 View Live Demo
+            </button>
+        </div>
+    </div>
+
+    <div style="text-align: center; padding: 2rem; color: #666;">
+        <p><strong>Implementation Date:</strong> October 6, 2025</p>
+        <p><strong>Status:</strong> 4/9 Pages Complete (44%)</p>
+        <p><strong>Version:</strong> 1.0</p>
+    </div>
+</body>
+
+</html>
