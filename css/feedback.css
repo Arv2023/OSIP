@@ -148,31 +148,31 @@
 
 /* Video Section */
 .video-section {
-    padding: 4rem 2rem;
+    padding: 3rem 2rem;
     background: #f8f9fa;
     text-align: center;
 }
 
 .video-section h2 {
-    font-size: 2.5rem;
+    font-size: 2rem;
     color: #C7342A;
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
 }
 
 .video-description {
-    font-size: 1.1rem;
+    font-size: 1rem;
     color: #555;
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
     font-style: italic;
 }
 
 .video-wrapper {
-    max-width: 900px;
+    max-width: 500px;
     margin: 0 auto;
-    border-radius: 15px;
+    border-radius: 10px;
     overflow: hidden;
-    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
     background: #000;
 }
 
@@ -181,7 +181,7 @@
     width: 100%;
     height: auto;
     object-fit: contain;
-    border-radius: 15px;
+    border-radius: 10px;
 }
 
 /* Feedback Form Section */
@@ -320,16 +320,16 @@
     }
 
     .video-section h2 {
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
 
     .video-description {
-        font-size: 1rem;
+        font-size: 0.9rem;
         padding: 0 1rem;
     }
 
     .video-wrapper {
-        border-radius: 10px;
+        border-radius: 8px;
         max-width: 100%;
     }
 }
